@@ -1,0 +1,5 @@
+﻿  C016193GTank.cpp
+  TankManager.cpp
+c:\users\c016193g.student\documents\github\aicourse\gameai\gameai\tankmanager.cpp(203): error C2440: 'initializing': cannot convert from 'BaseTank *' to 'C016193GTank *'
+  c:\users\c016193g.student\documents\github\aicourse\gameai\gameai\tankmanager.cpp(203): note: Cast from base to derived requires dynamic_cast or static_cast
+  Generating Code...
