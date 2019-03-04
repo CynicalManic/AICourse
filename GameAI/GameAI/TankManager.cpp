@@ -196,11 +196,10 @@ BaseTank* TankManager::GetTankObject(SDL_Renderer* renderer, TankSetupDetails de
 		DumbTank* newTank = new DumbTank(renderer, details);
 		newBaseTank = (BaseTank*)newTank;
 	}
-	if (details.StudentName == "DumbTank")
+	if (details.StudentName == "JackCoffey")
 	{
-		ControlledTank* newTank = new ControlledTank(renderer, details);
-		C016193GTank* 
-		newBaseTank = (BaseTank*)newTank;
+		C016193GTank* newTank = new C016193GTank(renderer, details);
+		newBaseTank = (C016193GTank*)newTank;
 	}
 
 	//Assert if no tank was setup.

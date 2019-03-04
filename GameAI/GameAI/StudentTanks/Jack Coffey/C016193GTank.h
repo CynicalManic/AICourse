@@ -3,6 +3,7 @@
 
 #include <SDL.h>
 #include "../../Commons.h"
+#include "../../BaseTank.h"
 
 class BaseTank;
 
@@ -26,13 +27,7 @@ protected:
 	void	MoveInHeadingDirection(float deltaTime);
 
 private:
-	TURN_DIRECTION  mTankTurnDirection;
-	bool			mTankTurnKeyDown;
-	MOVE_DIRECTION  mTankMoveDirection;
-	bool			mTankMoveKeyDown;
-	TURN_DIRECTION  mManTurnDirection;
-	bool			mManKeyDown;
-	bool			mFireKeyDown;
+
 };
 
 //---------------------------------------------------------------

@@ -10,7 +10,7 @@ using namespace::std;
 #define AUDIO_VISIBLE 
 #define DEBUG_LINES_VISIBLE
 
-const string kTilemapPath			= "XML Data Files/Arena.xml";
+const string kTilemapPath			= "XML Data Files/GameAIOneBuilding.xml";
 const string kScorePath				= "Scores/Scores.txt";
 const string kTankPath				= "XML Data Files/TankData.xml";
 const string kBulletPath			= "Images/Bullet.png";

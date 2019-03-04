@@ -1,5 +1,21 @@
-﻿  C016193GTank.cpp
+﻿  BaseTank.cpp
+e:\github work\aicourse\gameai\gameai\basetank.cpp(872): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Collisions.cpp
+  ControlledTank.cpp
+  DumbTank.cpp
+  GameObject.cpp
+  GameScreenLevel1.cpp
+  GameScreenManager.cpp
+  LevelMap.cpp
+  ObstacleManager.cpp
+  PickUpManager.cpp
+  Projectile.cpp
+  ProjectileManager.cpp
+  Source.cpp
+  C016193GTank.cpp
   TankManager.cpp
-c:\users\c016193g.student\documents\github\aicourse\gameai\gameai\tankmanager.cpp(203): error C2440: 'initializing': cannot convert from 'BaseTank *' to 'C016193GTank *'
-  c:\users\c016193g.student\documents\github\aicourse\gameai\gameai\tankmanager.cpp(203): note: Cast from base to derived requires dynamic_cast or static_cast
+  Texture2D.cpp
+  Waypoint.cpp
+  WaypointManager.cpp
   Generating Code...
+  GameAI.vcxproj -> E:\Github Work\AICourse\GameAI\Debug\GameAI.exe
