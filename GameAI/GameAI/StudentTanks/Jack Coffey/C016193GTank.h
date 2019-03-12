@@ -4,6 +4,7 @@
 #include <SDL.h>
 #include "../../Commons.h"
 #include "../../BaseTank.h"
+#include "../../StudentTanks/Jack Coffey/GraphNode.h"
 
 class BaseTank;
 
@@ -25,6 +26,8 @@ public:
 	//---------------------------------------------------------------
 protected:
 	void	MoveInHeadingDirection(float deltaTime);
+	void SearchBFS(GraphNode* rootNode);
+	void SearchDFS(GraphNode* rootNode);
 
 private:
 

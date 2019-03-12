@@ -96,6 +96,9 @@
     <ClInclude Include="StudentTanks\Jack Coffey\C016193GTank.h">
       <Filter>StudentTanks\Jack Coffey</Filter>
     </ClInclude>
+    <ClInclude Include="StudentTanks\Jack Coffey\GraphNode.h">
+      <Filter>StudentTanks\Jack Coffey</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WaypointManager.cpp">
