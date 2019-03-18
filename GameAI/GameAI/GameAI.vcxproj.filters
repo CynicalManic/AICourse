@@ -99,6 +99,9 @@
     <ClInclude Include="StudentTanks\Jack Coffey\GraphNode.h">
       <Filter>StudentTanks\Jack Coffey</Filter>
     </ClInclude>
+    <ClInclude Include="StudentTanks\Jack Coffey\SteeringBehaviours.h">
+      <Filter>StudentTanks\Jack Coffey</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WaypointManager.cpp">
@@ -168,6 +171,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StudentTanks\Jack Coffey\C016193GTank.cpp">
+      <Filter>StudentTanks\Jack Coffey</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentTanks\Jack Coffey\SteeringBehaviours.cpp">
       <Filter>StudentTanks\Jack Coffey</Filter>
     </ClCompile>
   </ItemGroup>

@@ -2,7 +2,7 @@
 #include "../../TankManager.h"
 #include "../../Commons.h"
 #include "../../C2DMatrix.h"
-#include <queue>
+#include "SteeringBehaviours.h"
 
 //--------------------------------------------------------------------------------------------------
 
@@ -37,13 +37,24 @@ C016193GTank::C016193GTank(SDL_Renderer* renderer, TankSetupDetails details) : B
 	//SearchDFS(pNodeA);
 
 	//Breadth First Search.
-	SearchBFS(pNodeA);
+	cout << endl;
+	SearchBFS(pNodeA, pNodeI);
+	cout << endl;
+	GetReturnStack(pNodeI);
+	cout << endl;
 
+	m_steeringBehaviours = new SteeringBehaviours(this);
+	m_steeringBehaviours->SetTarget(Vector2D(100,300));
 
 }
 
-void C016193GTank::SearchBFS(GraphNode * rootNode)
+void C016193GTank::SearchBFS(GraphNode * rootNode, GraphNode* endNode)
 {
+	if (rootNode == endNode)
+	{
+		return;
+	}
+
 	queue<GraphNode*> queue;
 	queue.push(rootNode);
 	GraphNode* current;
@@ -56,22 +67,47 @@ void C016193GTank::SearchBFS(GraphNode * rootNode)
 		cout << current->GetID();
 		queue.pop();
 
+		if (current == endNode)		
+			break;		
+
 		std::vector<GraphNode*> children = current->GetChildNodes();
 		for (int i = 0; i < children.size(); i++)
 		{
 			if (!children[i]->GetVisited())
 			{
+				children[i]->SetReturnNode(current);
 				children[i]->SetVisited(true);
 				queue.push(children[i]);
 			}
-		}
-		
+		}		
 	}
 }
 
 void C016193GTank::SearchDFS(GraphNode * rootNode)
 {
+	
+}
 
+std::stack<GraphNode*> C016193GTank::GetReturnStack(GraphNode * endNode)
+{
+	std::stack<GraphNode*> stack;
+	GraphNode* current = endNode;
+	stack.push(current);
+
+	while (current->GetReturnNode() != nullptr)
+	{
+		current = current->GetReturnNode();
+		stack.push(current);
+	}
+
+	while (stack.empty() != true)
+	{
+		current = stack.top();
+		cout << current->GetID();
+		stack.pop();
+	}
+
+	return stack;
 }
 
 //--------------------------------------------------------------------------------------------------

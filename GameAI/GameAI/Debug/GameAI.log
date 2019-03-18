@@ -1,3 +1,3 @@
 ﻿  C016193GTank.cpp
-e:\github work\aicourse\gameai\gameai\studenttanks\jack coffey\c016193gtank.cpp(60): warning C4018: '<': signed/unsigned mismatch
+e:\github work\aicourse\gameai\gameai\studenttanks\jack coffey\c016193gtank.cpp(74): warning C4018: '<': signed/unsigned mismatch
   GameAI.vcxproj -> E:\Github Work\AICourse\GameAI\Debug\GameAI.exe

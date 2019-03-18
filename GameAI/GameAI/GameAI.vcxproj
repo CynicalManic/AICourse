@@ -84,6 +84,7 @@
     <ClInclude Include="ProjectileManager.h" />
     <ClInclude Include="StudentTanks\Jack Coffey\C016193GTank.h" />
     <ClInclude Include="StudentTanks\Jack Coffey\GraphNode.h" />
+    <ClInclude Include="StudentTanks\Jack Coffey\SteeringBehaviours.h" />
     <ClInclude Include="TankManager.h" />
     <ClInclude Include="Texture2D.h" />
     <ClInclude Include="TinyXML\tinystr.h" />
@@ -107,6 +108,7 @@
     <ClCompile Include="ProjectileManager.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="StudentTanks\Jack Coffey\C016193GTank.cpp" />
+    <ClCompile Include="StudentTanks\Jack Coffey\SteeringBehaviours.cpp" />
     <ClCompile Include="TankManager.cpp" />
     <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="TinyXML\tinystr.cpp" />

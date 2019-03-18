@@ -9,6 +9,7 @@ private:
 	char			   m_Identifier;
 	std::vector<GraphNode*> m_pChildNodes;
 	bool			    m_bVisited;
+	GraphNode* m_returnNode = nullptr;
 
 public:
 	GraphNode() : m_pChildNodes(0), m_Identifier(0), m_bVisited(0) { ; }
@@ -21,6 +22,9 @@ public:
 
 	void SetVisited(bool yesNo) { m_bVisited = yesNo; }
 	bool GetVisited() { return m_bVisited; }
+
+	void SetReturnNode(GraphNode* returnNode) { m_returnNode = returnNode; }
+	GraphNode* GetReturnNode() { return m_returnNode; }
 };
 
 #endif //GraphNode_h

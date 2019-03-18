@@ -68,7 +68,10 @@ GameWorld::GameWorld(int cx, int cy):
                                     Prm.VehicleScale);        //scale
 
 	//Set which behaviours the vehicle will use:
-	pVehicle->Steering()->FlockingOn();
+	pVehicle->Steering()->WanderOn();
+	pVehicle->Steering()->ObstacleAvoidanceOn();
+	pVehicle->Steering()->WallAvoidanceOn();
+	pVehicle->SetMaxSpeed(70.0f);
 
     m_Vehicles.push_back(pVehicle);
 

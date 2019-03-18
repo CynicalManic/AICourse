@@ -5,8 +5,12 @@
 #include "../../Commons.h"
 #include "../../BaseTank.h"
 #include "../../StudentTanks/Jack Coffey/GraphNode.h"
+#include <queue>
+#include <stack>
 
 class BaseTank;
+class SteeringBehaviours;
+
 
 //---------------------------------------------------------------
 
@@ -25,9 +29,14 @@ public:
 
 	//---------------------------------------------------------------
 protected:
-	void	MoveInHeadingDirection(float deltaTime);
-	void SearchBFS(GraphNode* rootNode);
+	void MoveInHeadingDirection(float deltaTime);
+	void SearchBFS(GraphNode* rootNode, GraphNode* endNode);
 	void SearchDFS(GraphNode* rootNode);
+	std::stack<GraphNode*> GetReturnStack(GraphNode* endNode);
+
+	Vector2D m_vPos;
+	Vector2D m_vHeading;
+	SteeringBehaviours* m_steeringBehaviours;
 
 private:
 
